@@ -7,3 +7,4 @@ edition = "2021"
 
 [dependencies]
 polars = "0.25.1"
+smartcore = "0.3.0"

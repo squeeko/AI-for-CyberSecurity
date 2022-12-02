@@ -50,6 +50,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "216261ddc8289130e551ddcd5ce8a064710c0d064a4d2895c67151c92b5443f6"
 
 [[package]]
+name = "approx"
+version = "0.5.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cab112f0a86d568ea0e627cc1d6be74a1e9cd55214684db5561995f6dad897c6"
+dependencies = [
+ "num-traits",
+]
+
+[[package]]
 name = "arrow2"
 version = "0.14.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1064,6 +1073,19 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a507befe795404456341dfab10cef66ead4c041f62b8b11bbb92bffe5d0953e0"
 
 [[package]]
+name = "smartcore"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b326b5ee40a76afb12b958e4f1bceb9b7d57b7369808078330e97fbc07988720"
+dependencies = [
+ "approx",
+ "cfg-if",
+ "num",
+ "num-traits",
+ "rand",
+]
+
+[[package]]
 name = "smartstring"
 version = "1.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1161,6 +1183,7 @@ name = "train-test-split"
 version = "0.1.0"
 dependencies = [
  "polars",
+ "smartcore",
 ]
 
 [[package]]
